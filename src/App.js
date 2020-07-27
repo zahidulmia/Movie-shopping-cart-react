@@ -5,6 +5,7 @@ import "font-awesome/css/font-awesome.css";
 import Counters from "./components/Counters";
 import Counter from "./components/Counter";
 import Navbar from "./components/Navbar";
+
 class App extends Component {
   state = {
     counters: [
@@ -65,18 +66,19 @@ class App extends Component {
     
     return (  
 <React.Fragment>
-< Navbar totalcounters={this.state.counters.filter(c=> c.value > 0 ).length} />
+{/* < Navbar totalcounters={this.state.counters.filter(c=> c.value > 0 ).length} /> */}
 <body>
 <main role="main" class="container">
 
-<Counters
+{/* <Counters
 counters={this.state.counters}
 onReset={this.HandleReset}
 onIncreament={this.handleIncreamet}
 onDelete={this.HandleDelete}
 onDecrement={this.handleDecrement}
 
-/>
+/> */}
+<Movies/>
 </main>
 </body>
 
