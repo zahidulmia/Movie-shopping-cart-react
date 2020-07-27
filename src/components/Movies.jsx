@@ -46,7 +46,7 @@ this.setState({movie: movies});
 
 <tr key={movie._id}>
 <td>{movie.title}</td>
-<td> <Like liked={movie.liked} onClick={()=>this.handleLike(movie)}/> </td>
+<td> <Like liked={movie.liked} onLike={()=>this.handleLike(movie)}/> </td>
 <td>{movie.genre.name}</td>
 <td>{movie.numberInStock}</td>
 <td>{movie.dailyRentalRate}</td>
