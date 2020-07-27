@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+import Movies from "./components/Movies";
+import "bootstrap/dist/css/bootstrap.css";
+import "font-awesome/css/font-awesome.css";
+import Counters from "./components/Counters";
+import Counter from "./components/Counter";
+import Navbar from "./components/Navbar";
+class App extends Component {
+  state = {  }
+  render() { 
+    return (  
+<React.Fragment>
+<Navbar/>
+<body>
+<main role="main" class="container">
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+<Counters/>
+</main>
+</body>
+
+
+
+</React.Fragment>
+
+    );
+  }
 }
-
+ 
 export default App;
+
